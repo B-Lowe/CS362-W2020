@@ -51,12 +51,49 @@ def getBoxes(nV):
     box["Throne Room"]=[Dominion.Throne_Room()]*10
     return box
 
+def getBoxesForTest(nV):
+    box = {}
+    box["Woodcutter"]=[Dominion.Woodcutter()]*1
+    box["Smithy"]=[Dominion.Smithy()]*2
+    box["Laboratory"]=[Dominion.Laboratory()]*3
+    box["Village"]=[Dominion.Village()]*4
+    box["Festival"]=[Dominion.Festival()]*5
+    box["Market"]=[Dominion.Market()]*6
+    box["Chancellor"]=[Dominion.Chancellor()]*7
+    box["Workshop"]=[Dominion.Workshop()]*8
+    box["Moneylender"]=[Dominion.Moneylender()]*9
+    box["Chapel"]=[Dominion.Chapel()]*10
+    box["Cellar"]=[Dominion.Cellar()]*11
+    box["Remodel"]=[Dominion.Remodel()]*12
+    box["Adventurer"]=[Dominion.Adventurer()]*13
+    box["Feast"]=[Dominion.Feast()]*14
+    box["Mine"]=[Dominion.Mine()]*15
+    box["Library"]=[Dominion.Library()]*16
+    box["Gardens"]=[Dominion.Gardens()]*nV
+    box["Moat"]=[Dominion.Moat()]*17
+    box["Council Room"]=[Dominion.Council_Room()]*18
+    box["Witch"]=[Dominion.Witch()]*19
+    box["Bureaucrat"]=[Dominion.Bureaucrat()]*20
+    box["Militia"]=[Dominion.Militia()]*21
+    box["Spy"]=[Dominion.Spy()]*22
+    box["Thief"]=[Dominion.Thief()]*23
+    box["Throne Room"]=[Dominion.Throne_Room()]*24
+    return box
+
 def getSupplyOrder():
     supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
                     3:['Silver','Chancellor','Village','Woodcutter','Workshop'],
                     4:['Gardens','Bureaucrat','Feast','Militia','Moneylender','Remodel','Smithy','Spy','Thief','Throne Room'],
                     5:['Duchy','Market','Council Room','Festival','Laboratory','Library','Mine','Witch'],
                     6:['Gold','Adventurer'],8:['Province']}
+    return supply_order
+
+def getSupplyOrderForTest():
+    supply_order = {0:['Curse','Copper'],1:['Estate','Cellar','Chapel','Moat'],
+                    2:['Silver','Chancellor','Village','Woodcutter','Workshop'],
+                    3:['Gardens','Bureaucrat','Feast','Militia','Moneylender','Remodel','Smithy','Spy','Thief','Throne Room'],
+                    4:['Duchy','Market','Council Room','Festival','Laboratory','Library','Mine','Witch'],
+                    5:['Gold','Adventurer'],6:['Province']}
     return supply_order
 
 def getSupply(player_names, nV, nC, box):

@@ -18,7 +18,7 @@ nV = testUtility.victoryCount(player_names)
 nC = testUtility.cursesCount(player_names)
 
 #Define box
-box = testUtility.getBoxes(nV)
+box = testUtility.getBoxesForTest(nV)
 
 supply_order = testUtility.getSupplyOrder()
 

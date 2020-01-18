@@ -20,7 +20,7 @@ nC = testUtility.cursesCount(player_names)
 #Define box
 box = testUtility.getBoxes(nV)
 
-supply_order = testUtility.getSupplyOrder()
+supply_order = testUtility.getSupplyOrderForTest()
 
 #Define supply
 supply = testUtility.getSupply(player_names, nV, nC, box)
